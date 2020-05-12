@@ -16,6 +16,15 @@ class MainTest(TestCase):
             'The Avengers',
             'Shining'
         ]
-        self.assertEqual(search(titles, 'ho'), ['How I Met Your Mother', 'Doctor Who', 'The Hobbit'])
-        self.assertEqual(search(titles, 'exte'), ['Dexter'])
-        self.assertEqual(search(titles, 'the'), ['The Big Bang Theory', 'How I Met Your Mother', 'The Hobbit', 'The Avengers'])	
+        self.assertEqual(
+            search(titles, 'ho'), 
+            ['How I Met Your Mother', 'Doctor Who', 'The Hobbit']
+        )
+        self.assertEqual(
+            search(titles, 'exte'), 
+            ['Dexter']
+        )
+        self.assertEqual(
+            search(titles, 'the'), 
+            ['The Big Bang Theory', 'How I Met Your Mother', 'The Hobbit', 'The Avengers']
+        )	
